@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Botón para ejecutar la tarea SIN hilos secundarios -->
+        <Button
+            android:id="@+id/blockingTaskButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tarea Pesada (Sin Hilos)" />
+
+        <!-- Botón para ejecutar la tarea CON hilos secundarios -->
+        <Button
+            android:id="@+id/backgroundTaskButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tarea Pesada (Con Hilos)" />
+
+        <!-- Botón interactivo para probar la respuesta de la UI -->
+        <Button
+            android:id="@+id/clickMeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¡Haz clic aquí!" />
+
+        <!-- Contador de clics -->
+        <TextView
+            android:id="@+id/clickCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="24sp"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
