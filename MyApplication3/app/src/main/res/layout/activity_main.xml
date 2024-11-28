@@ -28,12 +28,28 @@
             android:layout_height="wrap_content"
             android:text="Tarea Pesada (Con Hilos)" />
 
+        <!-- Botón para ejecutar la tarea usando WorkManager -->
+        <Button
+            android:id="@+id/workManagerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tarea Pesada (WorkManager)" />
+
+        <!-- Botón para ejecutar la tarea usando un Service -->
+        <Button
+            android:id="@+id/serviceButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tarea Pesada (Service)" />
+
         <!-- Botón interactivo para probar la respuesta de la UI -->
         <Button
             android:id="@+id/clickMeButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="¡Haz clic aquí!" />
+            android:text="¡Haz clic aquí!"
+            android:layout_gravity="center"
+            android:textStyle="bold" />
 
         <!-- Contador de clics -->
         <TextView
@@ -42,7 +58,9 @@
             android:layout_height="wrap_content"
             android:text="0"
             android:textSize="24sp"
-            android:layout_marginTop="16dp" />
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            android:textStyle="bold" />
     </LinearLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
